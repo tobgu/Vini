@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_wine_note">Add Wine Note</string>
+    <string name="edit_wine_note">Edit Wine Note</string>
+    <string name="delete_wine_note">Delete Wine Note</string>
+    <string name="app_name">Vini</string>
+    <string name="wine_year">Year</string>
+    <string name="wine_grade">Grade</string>
+    
+     <string-array name="wine_grades_array">
+        <item>-</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/edit_wine_note"
+          android:icon="@drawable/ic_menu_edit"
+          android:title="@string/edit_wine_note" />
+    <item android:id="@+id/delete_wine_note"
+          android:icon="@drawable/ic_menu_delete"
+          android:title="@string/delete_wine_note" />
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="wrap_content"
+    		  android:layout_height="wrap_content"
+    		  android:orientation="vertical">
+
+    <EditText android:id="@+id/wine_note_name"
+              android:layout_height="wrap_content"
+              android:text="Enter Wine Name"
+              android:layout_width="250dip"
+              android:layout_weight="1" />
+
+    <Spinner 
+        android:id="@+id/wine_note_year"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/wine_year"
+        android:layout_weight="0" />
+    />
+
+<!-- TODO: Perhaps fix this to use a special date dialog -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:layout_width="wrap_content"
+    			  android:layout_height="wrap_content"
+    			  android:orientation="horizontal">
+	
+	    <TextView android:id="@+id/wine_note_taste_label"
+  		          android:layout_width="wrap_content"
+    	          android:layout_height="wrap_content"
+        	      android:text="Tasted:"
+           	      android:paddingLeft="5sp"
+        	      android:paddingRight="15sp"
+            	  android:layout_weight="0"
+            	  android:textStyle="bold"
+            	  android:textSize="16dip" />
+
+	    <TextView android:id="@+id/wine_note_taste_date"
+  		          android:layout_width="wrap_content"
+    	          android:layout_height="wrap_content"
+           	      android:paddingRight="15sp"
+            	  android:layout_weight="0"
+            	  android:textSize="16dip" />
+
+	    <Button android:id="@+id/wine_note_taste_date_set" 
+   		        android:layout_width="fill_parent"
+   	            android:layout_height="wrap_content"
+            	android:text="Update"
+            	android:layout_weight="1"
+          		android:gravity="right" />
+            	
+		</LinearLayout>
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   				  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+	    <TextView android:id="@+id/wine_note_grade_text"
+	   	          android:layout_height="wrap_content"
+  		          android:layout_width="wrap_content"	   	          
+        	      android:text="Wine Grade"
+           	      android:paddingLeft="5sp"
+           	      android:paddingRight="5sp"
+            	  android:layout_weight="0"
+            	  android:textSize="16dip"
+  	              android:textStyle="bold" />
+		   
+		<Spinner android:id="@+id/wine_note_grade_selector"
+    	    	 android:layout_width="wrap_content"
+        		 android:layout_height="wrap_content"
+        		 android:prompt="@string/wine_grade"
+        		 android:layout_weight="1"
+        		 android:gravity="right"  />
+        		 
+        </LinearLayout>
+        
+    <EditText android:id="@+id/wine_note_comment"
+              android:layout_height="wrap_content"
+              android:text="Enter Comment"
+              android:layout_width="250dip" />
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			  android:layout_width="wrap_content"
+    			  android:layout_height="wrap_content"
+    			  android:orientation="horizontal">
+    			  
+	    <Button android:id="@+id/wine_note_save" 
+   		        android:layout_width="wrap_content"
+   	            android:layout_height="wrap_content"
+            	android:text="Save" />
+
+        <Button android:id="@+id/wine_note_cancel" 
+        	    android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="Cancel" />
+        
+	</LinearLayout>	
+</LinearLayout>
